@@ -3,15 +3,20 @@
 Streamlit dashboard for the Customer Segmentation & Churn Pattern Analytics
 in European Banking project (Unified Mentor capstone).
 
+**Live demo:** https://adityadev-17-customer-segmentation-chur-streamlit-appapp-oaizhf.streamlit.app/
+*(Free-tier hosting — the app may take 30–60 seconds to wake up if it has been idle.)*
+
 ## Setup
 
 1. Ensure Python 3.9+ is installed.
-2. From this folder (`streamlit_app/`), install dependencies: pip install -r requirements.txt
-
+2. From the project root, create and activate a virtual environment (recommended): 
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+3. Install dependencies: pip install -r streamlit_app\requirements.txt
 
 ## Running the app
 
-From this folder, run: streamlit run app.py
+From the **project root** (not inside `streamlit_app/`), run: streamlit run streamlit_app\app.py
 
 
 The app will open automatically in your browser at `http://localhost:8501`.
@@ -20,6 +25,7 @@ The app will open automatically in your browser at `http://localhost:8501`.
 streamlit_app/
 ├── app.py # Main entry point — all tabs assembled here
 ├── requirements.txt
+├── README.md
 ├── data/
 │ └── df_clean_for_dashboard.csv # Cleaned, segmented dataset (from notebook Phase 2)
 ├── models/
@@ -34,7 +40,6 @@ streamlit_app/
 ├── geography_analysis.py # Geography tab
 ├── age_tenure_analysis.py # Age & Tenure tab
 └── high_value_explorer.py # High-Value Explorer tab
-
 
 
 ## Dashboard tabs
